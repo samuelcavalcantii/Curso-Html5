@@ -1,0 +1,238 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../_fonts/Montserrat/Montserrat-SemiBold.ttf");
+}
+body
+{
+    font-family:'Montserrat',sans-serif;
+    background-color: #dddddd;
+    color: rgba(0,0,0,1);
+}
+div#interface {
+    width: 1050px;
+    background-color: #f4f4f4;
+    margin: -20px auto 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    padding: 10px;
+}
+p{
+    text-align: justify;
+    text-indent: 50px;
+    font-family: "Open Sans",sans-serif;
+}
+a{
+    color: #4D4D4D;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+/*Formatação do cabeçalho*/
+
+header#cabecalho img#icone{
+    position: absolute;
+    left: 1010px;
+    top: 70px;
+}
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq-removebg-preview.png") no-repeat 0 80px;
+
+}
+header#cabecalho h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: rgba(0,0,0,.6);
+    padding: 0;
+    margin-bottom: 0;
+}
+header#cabecalho h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0;
+    margin-top: 0;
+
+}
+/* Formatação de imagens com legendas */
+
+figure.foto-legenda {
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+}
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: "Open Sans",sans-serif;
+
+}
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
+}
+/*Formatação Menu*/
+
+nav#menu{
+    display: block;
+}
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 500px;
+
+
+
+
+}
+nav#menu li {
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+    font-family: 'Montserrat', sans-serif;
+}
+nav#menu li:hover {
+    background-color: #606060;
+}
+nav#menu h1 {
+    display: none;
+}
+nav#menu a {
+    color: #000000;
+    text-decoration: none;
+}
+nav#menu a:hover {
+    color: #ffffff;
+    text-decoration: overline underline;
+}
+/* divisão das seções */
+section#corpo {
+    display: block;
+    width: 620px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+/*Formatação de Artigo*/
+article#noticia-principal h2 {
+    font-size: 13pt;
+    color: #4D4D4D;
+    background-color: #B5B5B5;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
+ }
+header#cabecalho-artigo h1 {
+    font-family: 'Montserrat',sans-serif;
+    font-size:  20pt;
+    color: #4D4D4D;
+    margin-bottom: 0;
+    margin-top: 0;
+
+}
+header#cabecalho-artigo h2 {
+    font-size: 13pt;
+    color: #4D4D4D;
+    background-color: #f4f4f4;
+
+}
+.direita {
+    text-align: right;
+}
+header#cabecalho-artigo h3 {
+    font-size: 12pt;
+    color: #606060;
+
+}
+
+/* Formatção de Tabela*/
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 1px 4px black;
+}
+table#tabelaspec td {
+    border: 1px solid #1b1e21;
+    padding: 10px;
+    vertical-align: middle;
+    font-size: 10pt;
+    font-family: "Open Sans",sans-serif;
+
+}
+table#tabelaspec td.ce {
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: middle;
+    text-align: center;
+
+}
+table#tabelaspec td.cd {
+background-color: #cecece;
+}
+table#tabelaspec caption{
+    color: #4D4D4D;
+    font-size: 11pt;
+    font-weight: bolder;
+    text-align: left;
+}
+table#tabelaspec caption span {
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+aside#lateral {
+    display: block;
+    width: 400px;
+    float: right;
+    background-color: #B5B5B5;
+    padding: 5px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+aside#lateral h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0;
+
+}
+aside#lateral h2{
+    background-color: #606060;
+    font-size: 13pt;
+    color: #E8E8E8;
+    padding: 5px;
+
+}
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+footer#rodape p {
+    text-align: center;
+}
+
